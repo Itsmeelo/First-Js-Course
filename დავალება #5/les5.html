@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        body{
+        body {
             margin: 0 auto;
             max-width: 1000px;
             display: flex;
             justify-content: center;
             flex-direction: column;
         }
-        .top{
+
+        .top {
             margin-bottom: 20px;
             text-align: center;
         }
-        .bor-top{
+
+        .bor-top {
             display: flex;
             justify-content: space-between;
         }
-        .bor-bot{
+
+        .bor-bot {
             display: flex;
             justify-content: space-between;
         }
-        .main-box{
+
+        .main-box {
             margin: 20px auto;
             width: 300px;
             height: 300px;
@@ -36,7 +42,8 @@
             align-items: center;
             background: #000;
         }
-        .shadow{
+
+        .shadow {
             margin-top: 30px;
             display: flex;
             justify-content: center;
@@ -46,21 +53,21 @@
     </style>
     <div class="top">
         <h3>Set color</h3>
-        <input type="color">
+        <input type="color" class="color1">
         <button type="button">Go</button>
     </div>
     <div class="bor-top">
         <div class="bor-top-col">
             <h3>border radius Top</h3>
             <div class="bor-top-row">
-                <input type="range">
+                <input type="range" min="0" max="50" step="1" value="0" oninput="change_BRadius()">
                 <span>0</span>
             </div>
         </div>
         <div class="bor-top-col">
             <h3>border radius Right</h3>
             <div class="bor-top-row">
-                <input type="range">
+                <input type="range" min="0" max="50" step="1" value="0" oninput="change_BRadius2()">
                 <span>0</span>
             </div>
 
@@ -71,14 +78,14 @@
         <div class="bor-top-col">
             <h3>border radius left</h3>
             <div class="bor-top-row">
-                <input type="range">
+                <input type="range" min="0" max="50" step="1" value="0" oninput="change_BRadius3()">
                 <span>0</span>
             </div>
         </div>
         <div class="bor-top-col">
             <h3>border radius bottom</h3>
             <div class="bor-top-row">
-                <input type="range">
+                <input type="range" min="0" max="50" step="1" value="0" oninput="change_BRadius4()">
                 <span>0</span>
             </div>
         </div>
@@ -100,4 +107,5 @@
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
